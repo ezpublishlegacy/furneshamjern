@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" node_id="294">
+	<product>
+		<name>600-650 LongLife teleskopisk ramme</name>
+		<swe_name>600-640 LongLife teleskop ram</swe_name>
+		<rsk_nr>7037337</rsk_nr>
+		<furnes_nr>2911/2627/2903TPPS</furnes_nr>
+		<weight_pcs>122</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning och öppet spetthål</swe_name>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme</name>
+		<swe_name>640 LongLife flytande ram</swe_name>
+		<rsk_nr>7037338</rsk_nr>
+		<furnes_nr>2910/2903TPPS</furnes_nr>
+		<weight_pcs>108</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning, lås og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning, lås och öppet spetthål</swe_name>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme</name>
+		<swe_name>640 LongLife flytande ram</swe_name>
+		<furnes_nr>2909/2903TPPS</furnes_nr>
+		<weight_pcs>108</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning, lås og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning, lås och öppet spetthål</swe_name>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600-650 LongLife teleskopisk, Furnus ramme</name>
+		<swe_name>600-640 LongLife teleskopisk, Furnus ram</swe_name>
+		<rsk_nr>7037428</rsk_nr>
+		<furnes_nr>2911/2627B/2903TPPS</furnes_nr>
+		<weight_pcs>122</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lock, slisse pakning og åpent spetthul</name>
+		<swe_name>LongLife lock, slitsad packning och öppet spetthål</swe_name>
+	</product>
+	<product>
+		<name>600-650 LongLife teleskopisk ramme</name>
+		<swe_name>600-640 LongLife teleskop ram</swe_name>
+		<rsk_nr>7037339</rsk_nr>
+		<furnes_nr>2911</furnes_nr>
+		<weight_pcs>53</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme, rett kant</name>
+		<swe_name>640 LongLife flytande ram, rak kant</swe_name>
+		<rsk_nr>7037368</rsk_nr>
+		<furnes_nr>2910</furnes_nr>
+		<weight_pcs>61</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme</name>
+		<swe_name>640 LongLife flytande ram</swe_name>
+		<nrf_nr>3300124</nrf_nr>
+		<furnes_nr>2909</furnes_nr>
+		<weight_pcs>61</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning, lås og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning, lås och öppet spetthål</swe_name>
+		<nrf_nr>3300041</nrf_nr>
+		<rsk_nr>7030325</rsk_nr>
+		<furnes_nr>2903TPPS</furnes_nr>
+		<weight_pcs>47</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600-640 teleskop ram A6 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7037123</rsk_nr>
+		<furnes_nr>2815/2817/2112</furnes_nr>
+		<weight_pcs>149</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>640 flytande ram A6 BASIC lock, öppet spetthål och nyckelhål</name>
+		<rsk_nr>7037121</rsk_nr>
+		<furnes_nr>2814/2112</furnes_nr>
+		<weight_pcs>127</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600 flytande ram A6 BASIC lock, öppet spetthål och nyckelhål</name>
+		<furnes_nr>/2112</furnes_nr>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600-640 fast ram A6 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7032387</rsk_nr>
+		<furnes_nr>2620/2112</furnes_nr>
+		<weight_pcs>98</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>400 teleskop ram A5 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7037026</rsk_nr>
+		<furnes_nr>2265/2266/2261</furnes_nr>
+		<weight_pcs>100</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600-640 teleskop ram A6 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7037123</rsk_nr>
+		<furnes_nr>2815/2817/2112</furnes_nr>
+		<weight_pcs>149</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>640 flytande ram A6 BASIC lock, öppet spetthål och nyckelhål</name>
+		<rsk_nr>7037121</rsk_nr>
+		<furnes_nr>2814/2112</furnes_nr>
+		<weight_pcs>127</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600 flytande ram A6 BASIC lock, öppet spetthål och nyckelhål</name>
+		<rsk_nr>?</rsk_nr>
+		<furnes_nr>…….../2112</furnes_nr>
+		<weight_pcs>?</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600-640 fast ram A6 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7032387</rsk_nr>
+		<furnes_nr>2620/2112</furnes_nr>
+		<weight_pcs>98</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>400 teleskop ram A5 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7037026</rsk_nr>
+		<furnes_nr>2265/2266/2261</furnes_nr>
+		<weight_pcs>100</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>400 flytande ram A5 BASIC lock, öppet spetthål och nyckelhål</name>
+		<rsk_nr>7035682</rsk_nr>
+		<furnes_nr>2264/2261</furnes_nr>
+		<weight_pcs>74.5</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>400 fast ram A5 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7030940</rsk_nr>
+		<furnes_nr>2263/2261</furnes_nr>
+		<weight_pcs>62</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>300 teleskop ram A4 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7037030</rsk_nr>
+		<furnes_nr>2275/2276/2271</furnes_nr>
+		<weight_pcs>67</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>300 fast ram A4 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7030716</rsk_nr>
+		<furnes_nr>2273/2271</furnes_nr>
+		<weight_pcs>40</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>225 fast ram A3 BASIC lock, öppet spetthål och nyckelhål </name>
+		<rsk_nr>7030616</rsk_nr>
+		<furnes_nr>2283/2281</furnes_nr>
+		<weight_pcs>25.5</weight_pcs>
+		<material>Gråjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>500 teleskop ram, A2 rännstensbetäckning BASIC galler, kantringssäkert</name>
+		<rsk_nr>7038113</rsk_nr>
+		<furnes_nr>4137/4138/4135</furnes_nr>
+		<weight_pcs>121</weight_pcs>
+		<material>Gråjärn</material>
+		<class>C250</class>
+	</product>
+	<product>
+		<name>400 teleskop ram A1, rännstensbetäckning BASIC galler, kantringssäkert Genomströmningsarea 640cm2</name>
+		<rsk_nr>7038017</rsk_nr>
+		<furnes_nr>4132/4133/4131D</furnes_nr>
+		<weight_pcs>95</weight_pcs>
+		<material>Gråjärn</material>
+		<class>C250</class>
+	</product>
+	<product>
+		<name>400 flytande ram A1, rännstensbetäckning BASIC galler, kantringssäkert Genomströmningsarea 640cm2</name>
+		<rsk_nr>7035679</rsk_nr>
+		<furnes_nr>4134/4131D</furnes_nr>
+		<weight_pcs>78</weight_pcs>
+		<material>Gråjärn</material>
+		<class>C250</class>
+	</product>
+	<product>
+		<name>400 fast ram A1, rännstensbetäckning BASIC galler, kantringssäkert Genomströmningsarea 640cm2</name>
+		<rsk_nr>7035623</rsk_nr>
+		<furnes_nr>4129/4131D</furnes_nr>
+		<weight_pcs>61</weight_pcs>
+		<material>Gråjärn</material>
+		<class>C250</class>
+	</product>
+	<product>
+		<name>Brandpost fast ram BASIC lock</name>
+		<rsk_nr>7034243</rsk_nr>
+		<furnes_nr>6115/6114</furnes_nr>
+		<weight_pcs>44</weight_pcs>
+		<material>Gråjärn</material>
+		<class>B125</class>
+	</product>
+	<product>
+		<name>BASIC lock</name>
+		<rsk_nr>7034245</rsk_nr>
+		<furnes_nr>6114</furnes_nr>
+		<weight_pcs>12.5</weight_pcs>
+		<material>Gråjärn</material>
+		<class>B125</class>
+	</product>
+	<product>
+		<name>Ventilbetäckning AV, flytande ram fyrkantig BASIC lock, 249x249mm</name>
+		<rsk_nr>7037541</rsk_nr>
+		<furnes_nr>6442/6441</furnes_nr>
+		<weight_pcs>18</weight_pcs>
+		<material>Gråjärn</material>
+		<class>-</class>
+	</product>
+	<product>
+		<name>Ventilbetäckning AV, fast ram fyrkantig BASIC lock, 170x170mm</name>
+		<rsk_nr>7034012</rsk_nr>
+		<furnes_nr>6452/6451</furnes_nr>
+		<weight_pcs>19</weight_pcs>
+		<material>Gråjärn</material>
+		<class>-</class>
+	</product>
+	<product>
+		<name>Ventilbetäckning SV, flytande ram fyrkantig BASIC lock, Ø180mm</name>
+		<rsk_nr>7037542</rsk_nr>
+		<furnes_nr>6463/6461</furnes_nr>
+		<weight_pcs>9</weight_pcs>
+		<material>Gråjärn</material>
+		<class>-</class>
+	</product>
+	<product>
+		<name>Ventilbetäckning SV, fast ram fyrkantig H=300 BASIC lock, 140x140mm</name>
+		<rsk_nr>7034013</rsk_nr>
+		<furnes_nr>6443/6441</furnes_nr>
+		<weight_pcs>16</weight_pcs>
+		<material>Gråjärn</material>
+		<class>-</class>
+	</product>
+	<product>
+		<name>Ventilbetäckning SV, fast ram fyrkantig H=200 BASIC lock, 140x140mm</name>
+		<rsk_nr>7034014</rsk_nr>
+		<furnes_nr>6444/6441</furnes_nr>
+		<weight_pcs>12</weight_pcs>
+		<material>Gråjärn</material>
+		<class>-</class>
+	</product>
+</products>

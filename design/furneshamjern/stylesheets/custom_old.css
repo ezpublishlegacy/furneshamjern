@@ -1,0 +1,186 @@
+body {
+	background-image: url(../images/site_bg.png);
+	background-position-x: center;
+	background-repeat: no-repeat;
+}
+
+div#page {
+	width: 1024px;
+	background-image: url(../images/main_bg.png);
+	min-height: 700px;
+}
+div#header {
+	width: 990px;
+	margin: 0 auto;
+	height: 98px;
+	padding: 0;
+}
+div#usermenu {
+	background-image: none; 	
+	float: left;
+	margin-top: 20px;
+	margin-left: 170px;
+	width: 515px;
+	height: 34px;
+}
+div#logo {
+	margin: 25px 0 0 30px;
+}
+div#links a {
+	border: 0;
+}
+div#languages {
+	margin-top: 18px;
+}
+input#searchtext {
+	border: 0;
+	font-size: 14px;
+	color: #706F6F;
+	width: 234px;
+	margin-top: 18px;
+	height: 41px;
+	float: left;
+	margin-left: 18px;
+	padding: 0 10px;
+}
+div#searchbox {
+	background-image: url(../images/sokefelt_bg.png);
+	width: 336px;
+	height: 77px;
+	margin-top: 5px;
+}
+div#searchbox-inner {
+	width: 320px;
+}
+input#searchbutton {
+	height: 43px;
+	margin-top: 17px;
+	width: 48px;
+	border: 0;
+	background: none;
+}
+div#topmenu {
+	background-color: black;
+	margin: 0 auto;	
+	width: 950px;
+	height: 32px;
+	padding: 0 20px;
+}
+div#topmenu ul li {
+	font-weight: normal;
+	background-image: none;
+}
+div#topmenu ul li a {
+	padding: 5px 10px 0 10px;
+	color: white;
+	line-height: 22px;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+div#topmenu ul li.selected a, div#topmenu ul li a:hover {
+border: 0;
+}
+
+div#topmenu ul#topmenu-secondlevel {
+	clear: both;
+}
+div#columns {
+	width: 940px;
+	margin: 0 auto;
+	padding:25px !important;
+}
+div#footer {
+	background: none;
+	height: 70px;
+	width: 990px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 10px;
+	padding-top: 0;
+}
+ul#companyinfo_left {
+	width: 210px;
+	float: left;
+	border-right: 2px solid #B5B2B2;
+	padding-right: 10px;
+	margin-top: 0;
+	color: #616060;
+}
+ul#companyinfo_right {
+	width: 195px;
+	float: left;
+	margin-left: 0;
+	margin-top: 0;
+	color: #747373;
+}
+p#companyinfo_p {
+	margin: 0;
+	width: 200px;
+	margin-left: 40px;
+	margin-bottom: 2px;
+	color: #616060;
+}
+div#footer ul li {
+	background: none;
+}
+div#footer a {
+	color: #f15d2f;
+	text-decoration: none;
+}
+div#logomap {
+	width: 265px;
+	float: right;
+	margin-top: -13px;
+}
+.left-column {	
+	width: 635px;
+	float: left;
+}
+element.style {
+position: relative;
+}
+#slider-container {
+	width: 635px;
+	height: 350px;
+	overflow: hidden;
+	float: left;
+}
+.slider-element {
+
+}
+.slider-overlay {
+	background-image: url(../images/slider_overlay.png);
+	height: 70px;
+	margin-top: -70px;
+	position: relative;
+	overflow: hidden;
+	width: 635px;
+}
+.slider_text {
+	color: white;
+	font-size: 17px;
+	padding: 15px;
+	width: 478px;
+	height: 40px;
+	float: left;
+}
+#slider-nav {
+	width: 635px;
+	height: 10px;
+	position: relative;
+	margin-top: -20px;
+	z-index: 999;
+	float: left;
+}
+#slider-nav div {
+	background-image: url(../images/slider_inactive_btn.png);
+	width: 10px;
+	height: 10px;
+	border: none;
+	margin-right: 14px;
+	float: right;
+	cursor: pointer;
+}
+#slider-nav .active_nav_button {
+	background-image: url(../images/slider_active_btn.png) !important;
+}

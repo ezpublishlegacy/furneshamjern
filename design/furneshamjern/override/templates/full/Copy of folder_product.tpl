@@ -1,0 +1,123 @@
+{* Folder - Full view *}
+{def $rss_export = fetch( 'rss', 'export_by_node', hash( 'node_id', $node.node_id ) )}
+{def $innhold =  ezini( 'Produktpresentasjon', 'innhold', 'furnes.ini' ) )}
+{ezpagedata_set( 'extra_menu', false() )}
+
+<div class="content-view-full-folder clearfix">
+    <div class="class-folder">
+    	{if $node.object.can_edit}
+		<div class="print">
+			<a class="print" target="_new" href="{concat("/index.php/layout/set/print/content/view/full/",$node.node_id,"/")}">Skriv ut denne siden</a>
+		</div>
+		{/if}
+        {if $rss_export}
+        <div class="attribute-rss-icon">
+            <a href="{concat( '/rss/feed/', $rss_export.access_url )|ezurl( 'no' )}" title="{$rss_export.title|wash()}"><img src="{'rss-icon.gif'|ezimage( 'no' )}" alt="{$rss_export.title|wash()}" /></a>
+        </div>
+        {/if}
+
+        <div class="attribute-header">
+            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+        </div>
+
+        {if eq( ezini( 'folder', 'SummaryInFullView', 'content.ini' ), 'enabled' )}
+            {if $node.object.data_map.short_description.has_content}
+                <div class="attribute-desc">
+                    {attribute_view_gui attribute=$node.data_map.short_description}
+                </div>
+            {/if}
+        {/if}
+
+        {if $node.object.data_map.description.has_content}
+                {attribute_view_gui attribute=$node.data_map.description}
+        {/if}
+
+        {if $node.object.data_map.show_children.data_int}
+            {def $page_limit = 100
+                 $classes = ezini( 'MenuContentSettings', 'ExtraIdentifierList', 'menu.ini' )
+                 $children = array()
+                 $children_count = '', 
+                 $lang=$node.object.default_language}
+                 
+            {if le( $node.depth, '3')}
+                {set $classes = $classes|merge( ezini( 'ChildrenNodeList', 'ExcludedClasses', 'content.ini' ) )}
+            {/if}
+            {set $children_count=fetch_alias( 'children_count', hash( 'parent_node_id', $node.main_node_id,
+                                                                      'class_filter_type', 'include',
+                                                                      'class_filter_array', $classes ) )}
+            <div class="content-view-children">
+            {if $children_count}
+            {foreach fetch_alias( 'children', hash( 'parent_node_id', $node.node_id,
+                                                            'offset', $view_parameters.offset,
+                                                            'class_filter_type', 'include',
+                                                            'class_filter_array', $classes,
+                                                            'limit', $page_limit ) ) as $child,
+                                                            'only_translated', true()  }
+                                                            
+             {if eq($child.object.content_class.identifier, product_presentation)}
+             {run-once}                   
+             {def $product_list = fetch( 'content', 'list', hash( 'parent_node_id', $node.main_node_id,
+																				'only_translated', true(),
+																				'sort_by', $node.sort_array))}
+							{def $type=array()}
+							{def $types=array()}
+							{def $types_prods=array()}				
+                         	{foreach $product_list as $products}
+                         	{if eq($products.object.current_language, $products.object.default_language)}
+                         		{def $value = $products.object.data_map.innhold.value.0}
+                         		{def $name = $products.object.data_map.innhold.contentclass_attribute.content.options[$value].name}
+                         		{def $type_id = $products.object.data_map.innhold.contentclass_attribute.content.options[$value].name}
+                         		{set $type = $type|append( $name )}
+                         		
+                         	{/if}
+                         	{/foreach}
+                         	{set $type = $type|unique}
+                         	
+                         	<ul class="tabs">
+                         	{foreach $innhold as $prods}
+                         		{foreach $type as $type_header}
+                         			{if eq($type_header, $prods)}
+                         				<li><a href="#">               		      		
+                         					{$type_header|i18n( 'hamjern/pack' )}                    		
+                         				</a></li>
+                         			{/if}
+                    			{/foreach}
+                         	{/foreach}
+							</ul>                       	
+                         	<div class="panes">
+                         	 	{foreach $innhold as $prods}
+                         		{foreach $type as $type_header}
+                         			{if eq($type_header, $prods)}
+                         	<div>
+                         	{foreach $product_list as $product}
+        						{def $prod_value = $product.object.data_map.innhold.value.0}
+        						{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+        						{if eq($prods, $prod_name)}
+        						{if eq($product.object.current_language, $product.object.default_language)}
+                         			{node_view_gui view='line' content_node=$product}
+                         		{/if}
+                         		{/if}
+                         	{/foreach}
+                         	</div>
+                         	{/if}
+                    		{/foreach}
+                       {/foreach}
+                         </div> 
+              {/run-once}
+              {else}
+                        {node_view_gui view='line' content_node=$child}
+              {/if}
+              {/foreach}
+              {/if}
+            </div>
+
+            {include name=navigator
+                     uri='design:navigator/google.tpl'
+                     page_uri=$node.url_alias
+                     item_count=$children_count
+                     view_parameters=$view_parameters
+                     item_limit=$page_limit}
+
+        {/if}
+    </div>
+</div>

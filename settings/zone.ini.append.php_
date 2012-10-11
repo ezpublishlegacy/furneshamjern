@@ -1,0 +1,206 @@
+<?php /*
+[General]
+AllowedTypes[]=GlobalZoneLayout
+AllowedTypes[]=2ZonesLayout1
+AllowedTypes[]=2ZonesLayout2
+AllowedTypes[]=2ZonesLayout3
+AllowedTypes[]=3ZonesLayout1
+AllowedTypes[]=3ZonesLayout2
+AllowedTypes[]=1ZoneLayout
+AllowedTypes[]=3ColZoneLayout
+AllowedTypes[]=2ColZoneLayout
+AllowedTypes[]=2Col6ZoneLayout
+AllowedTypes[]=1Main3Col1RightLayout
+AllowedTypes[]=3ZonesLayout3
+AllowedTypes[]=4ZonesLayout1
+AllowedTypes[]=4ColGlobalLayout
+AllowedTypes[]=CallForActionLayout
+
+[GlobalZoneLayout]
+ZoneTypeName=Global zone layout
+Zones[]=main
+ZoneName[main]=Global zone
+ZoneThumbnail=globalzone_layout.gif
+Template=globalzonelayout.tpl
+AvailableForClasses[]=global_layout
+
+[4ColGlobalLayout]
+ZoneTypeName=4 Col Global zone layout
+Zones[]=left1
+Zones[]=left2
+Zones[]=right1
+Zones[]=right2
+ZoneName[left1]=1 Left
+ZoneName[left2]=2 Left
+ZoneName[right1]=1 Right
+ZoneName[right2]=2 Right
+ZoneThumbnail=globalzone_layout.gif
+Template=4colglobalzonelayout.tpl
+AvailableForClasses[]=global_layout
+
+[2ZonesLayout1]
+ZoneTypeName=2 zones (layout 1)
+Zones[]=left
+Zones[]=right
+ZoneName[left]=Left zone
+ZoneName[right]=Right zone
+ZoneThumbnail=2zones_layout1.gif
+Template=2zoneslayout1.tpl
+AvailableForClasses[]=frontpage
+AvailableForClasses[]=landing_page
+
+[2ZonesLayout2]
+ZoneTypeName=2 zones (layout 2)
+Zones[]=left
+Zones[]=right
+ZoneName[left]=Left zone
+ZoneName[right]=Right zone
+ZoneThumbnail=2zones_layout2.gif
+Template=2zoneslayout2.tpl
+AvailableForClasses[]=frontpage
+AvailableForClasses[]=landing_page
+
+[2ZonesLayout3]
+ZoneTypeName=2 zones (layout 3)
+Zones[]=top
+Zones[]=bottom
+ZoneName[top]=Top zone
+ZoneName[bottom]=Bottom zone
+ZoneThumbnail=2zones_layout3.gif
+Template=2zoneslayout3.tpl
+AvailableForClasses[]=frontpage
+AvailableForClasses[]=landing_page
+
+[3ZonesLayout1]
+ZoneTypeName=3 zones (layout 1)
+Zones[]=left
+Zones[]=right
+Zones[]=bottom
+ZoneName[left]=Left zone
+ZoneName[right]=Right zone
+ZoneName[bottom]=Bottom zone
+ZoneThumbnail=3zones_layout1.gif
+Template=3zoneslayout1.tpl
+AvailableForClasses[]=frontpage
+AvailableForClasses[]=landing_page
+
+[3ZonesLayout2]
+ZoneTypeName=3 zones (layout 2)
+Zones[]=left
+Zones[]=right
+Zones[]=bottom
+ZoneName[left]=Left zone
+ZoneName[right]=Right zone
+ZoneName[bottom]=Bottom zone
+ZoneThumbnail=3zones_layout2.gif
+Template=3zoneslayout2.tpl
+AvailableForClasses[]=frontpage
+AvailableForClasses[]=landing_page
+
+[CallForActionLayout]
+ZoneTypeName=Call For Action zone layout
+Zones[]=main
+ZoneName[main]=Call For Action zone
+ZoneThumbnail=callforaction_layout.gif
+Template=callforactionlayout.tpl
+AvailableForClasses[]=folder
+
+
+[1ZoneLayout]
+ZoneTypeName=1 Zone layout
+Zones[]=middle
+ZoneName[middle]=Main
+ZoneThumbnail=globalzone_layout.gif
+Template=1zonelayout.tpl
+AvailableForClasses[]=frontpage
+
+[3ColZoneLayout]
+ZoneTypeName=3 Col Zone layout
+Zones[]=left
+Zones[]=middle
+Zones[]=right
+Zones[]=leftbottom
+Zones[]=middlebottom
+Zones[]=rightbottom
+ZoneName[left]=Left
+ZoneName[middle]=Main
+ZoneName[right]=Right
+ZoneName[leftbottom]=Left bottom
+ZoneName[middlebottom]=Main bottom
+ZoneName[rightbottom]=Right bottom
+ZoneThumbnail=globalzone_layout.gif
+Template=3colzonelayout.tpl
+AvailableForClasses[]=frontpage
+
+[2ColZoneLayout]
+ZoneTypeName=2 Col Zone layout
+Zones[]=left
+Zones[]=right
+Zones[]=leftbottom
+Zones[]=rightbottom
+ZoneName[left]=Left
+ZoneName[right]=Right
+ZoneName[leftbottom]=Left bottom
+ZoneName[rightbottom]=Right bottom
+ZoneThumbnail=globalzone_layout.gif
+Template=2colzonelayout.tpl
+AvailableForClasses[]=frontpage
+
+[2Col6ZoneLayout]
+ZoneTypeName=2 Col 6 Zone layout
+Zones[]=left1
+Zones[]=right1
+Zones[]=left2
+Zones[]=right2
+Zones[]=left3
+Zones[]=right3
+Zones[]=left4
+Zones[]=right4
+Zones[]=left5
+Zones[]=right5
+Zones[]=left6
+Zones[]=right6
+ZoneName[left1]=Left 1
+ZoneName[right1]=Right 1
+ZoneName[left2]=Left 2
+ZoneName[right2]=Right 2
+ZoneName[left3]=Left 3
+ZoneName[right3]=Right 3
+ZoneName[left4]=Left 4
+ZoneName[right4]=Right 4
+ZoneName[left5]=Left 5
+ZoneName[right5]=Right 5
+ZoneName[left6]=Left 6
+ZoneName[right6]=Right 6
+ZoneThumbnail=globalzone_layout.gif
+Template=2col6zonelayout.tpl
+AvailableForClasses[]=frontpage
+
+[3ZonesLayout3]
+ZoneTypeName=3 zones (layout 3)
+Zones[]=left
+Zones[]=middle
+Zones[]=right
+ZoneName[left]=Left zone
+ZoneName[middle]=Middle zone
+ZoneName[right]=Right zone
+ZoneThumbnail=3zones_layout3.gif
+Template=3zoneslayout3.tpl
+AvailableForClasses[]=frontpage
+
+[4ZonesLayout1]
+ZoneTypeName=4 zones (layout 1)
+Zones[]=left
+Zones[]=right
+Zones[]=bottomleft
+Zones[]=bottomright
+ZoneName[left]=Left zone
+ZoneName[right]=Right zone
+ZoneName[bottomleft]=Bottom left zone
+ZoneName[bottomright]=Bottom right zone
+ZoneThumbnail=4zones_layout1.gif
+Template=4zoneslayout1.tpl
+AvailableForClasses[]=frontpage
+
+
+*/ ?>

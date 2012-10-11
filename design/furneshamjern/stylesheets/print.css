@@ -1,0 +1,55 @@
+body {
+	background: white;
+	font-size: 12pt;
+	text-align: left;
+	}
+a:link, a:visited {
+	color: #333;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	}
+#wrap {
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	background-image: none;
+	background-color: white;
+}
+div.content-view-full {
+	float: left;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+div#main_print {
+	background-color: white;
+	width: 990px;
+	min-height: 820px;
+	height: 100%;
+	margin: 0 auto;
+	padding-top: 25px;
+}
+.product_presentation th {
+	background-image: url(../images/greybackgr.gif) !important;
+	background-color: #a0a0a0 !important;
+	text-align: left;
+}
+
+.print {
+	display: none;
+	}
+
+dl.product_presentation_buttons {
+	display: none;
+	}	
+@media all
+{
+	.page-break	{ display:none; }
+}
+
+@media print
+{
+	.page-break	{ display:block; page-break-before:always; }
+}

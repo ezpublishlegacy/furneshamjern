@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<product>
+		<name>600-650 LongLife teleskopisk ramme</name>
+		<swe_name>600-640 LongLife teleskop ram </swe_name>
+		<rsk_nr>7037337</rsk_nr>
+		<furnes_nr>2911/2627/2903TPPS</furnes_nr>
+		<weight_pcs>122</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning och öppet spetthål</swe_name>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme</name>
+		<swe_name>640 LongLife flytande ram</swe_name>
+		<rsk_nr>7037338</rsk_nr>
+		<furnes_nr>2910/2903TPPS</furnes_nr>
+		<weight_pcs>108</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning, lås og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning, lås och öppet spetthål</swe_name>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme</name>
+		<swe_name>640 LongLife flytande ram</swe_name>
+		<furnes_nr>2909/2903TPPS</furnes_nr>
+		<weight_pcs>108</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning, lås og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning, lås och öppet spetthål</swe_name>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>600-650 LongLife teleskopisk, Furnus ramme</name>
+		<swe_name>600-640 LongLife teleskopisk, Furnus ram</swe_name>
+		<rsk_nr>7037428</rsk_nr>
+		<furnes_nr>2911/2627B/2903TPPS</furnes_nr>
+		<weight_pcs>122</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lock, slisse pakning og åpent spetthul</name>
+		<swe_name>LongLife lock, slitsad packning och öppet spetthål</swe_name>
+	</product>
+	<product>
+		<name>600-650 LongLife teleskopisk ramme</name>
+		<swe_name>600-640 LongLife teleskop ram </swe_name>
+		<rsk_nr>7037339</rsk_nr>
+		<furnes_nr>2911</furnes_nr>
+		<weight_pcs>53</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme, rett kant</name>
+		<swe_name>640 LongLife flytande ram, rak kant</swe_name>
+		<rsk_nr>7037368</rsk_nr>
+		<furnes_nr>2910</furnes_nr>
+		<weight_pcs>61</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>650 LongLife flytende ramme</name>
+		<swe_name>640 LongLife flytande ram</swe_name>
+		<nrf_nr>3300124</nrf_nr>
+		<furnes_nr>2909</furnes_nr>
+		<weight_pcs>61</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+	<product>
+		<name>LongLife lokk, slisse pakning, lås og åpent spetthull</name>
+		<swe_name>LongLife lock, slitsad packning, lås och öppet spetthål</swe_name>
+		<nrf_nr>3300041</nrf_nr>
+		<rsk_nr>7030325</rsk_nr>
+		<furnes_nr>2903TPPS</furnes_nr>
+		<weight_pcs>47</weight_pcs>
+		<material>Segjärn</material>
+		<class>D400</class>
+	</product>
+</products>
