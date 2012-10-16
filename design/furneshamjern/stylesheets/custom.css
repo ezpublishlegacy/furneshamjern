@@ -1197,3 +1197,11 @@ div.warning-404 {
 	background-position: bottom right;
 	height: 400px;
 }
+
+table.list tr.bglight {
+    background-color: #E8E8E8;
+}
+
+table.list tr.bgdark {
+    background-color: #D0D0D0;
+}
