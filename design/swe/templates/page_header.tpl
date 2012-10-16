@@ -18,6 +18,6 @@
                 	Org. Kart</a>
                     <a href={'fdv'|ezurl}><img src={"fdv_icon.png"|ezimage} />
                     FDV</a>*}
-                    <a href="swe/content/view/sitemap/2"><img src={"sitemap_icon.png"|ezimage} />Webbkarta</a>                
+                    <a href="/content/view/sitemap/2"><img src={"sitemap_icon.png"|ezimage} />Webbkarta</a>                
       				</div>
 </div>

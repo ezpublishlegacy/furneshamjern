@@ -411,6 +411,9 @@ div#path {
     height: 15px;
 }
 
+div#path p {
+    margin: 10px 0;
+}
 .header_menu  {
 	height: 25px;
 	line-height: 25px;
@@ -486,7 +489,7 @@ div.product_presentation {
 
 div.product_presentation_list {
 	float: left;
-	height: 210px;
+	height: 220px;
 	overflow: hidden;
 	padding: 0;
 	margin: 0;
@@ -499,9 +502,9 @@ div.product_presentation_list {
 .product_presentation_list div {
 	float: left;
 	display: block;
-	margin:3px;
-	padding: 3px;
-	height: 200px;
+	margin: 0px;
+	padding: 0px;
+	height: 220px;
 }
 
 div.product_presentation_full {
@@ -520,6 +523,7 @@ div.product_presentation_full {
 	padding: 3px;
 	height: 200px;
 }
+
 
 dl.product_presentation {
 	padding: 0;
@@ -580,10 +584,10 @@ table.product_presentation a, table.product_presentation_buttons a, table.produc
 	}
 
 td.product-title {
-	width: 270px;
+	width: 500px;
 }
 td.number_80 {
-	width: 85px;
+	width: 80px;
 	}
 td.number_100 {
 	width: 100px;
@@ -1176,9 +1180,20 @@ table.renderedtable tr.bglight:hover, table.renderedtable tr.bgdark:hover {
 table.renderedtable tr.bglight:hover td, table.renderedtable tr.bgdark:hover td {
    background-color: none;
 }
-
+table.renderedtable tr.bglight, div.bglight {
+	background-color: #E8E8E8;
+}
+table.renderedtable tr.bgdark, div.bgdark {
+	background-color: #D0D0D0;
+}
 div.border div.attribute-image {
 	border: 1px solid #ccc;
 	margin: 5px;
 	padding: 5px;
 	}
+div.warning-404 {
+	background-image: url(../images/404.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	height: 400px;
+}

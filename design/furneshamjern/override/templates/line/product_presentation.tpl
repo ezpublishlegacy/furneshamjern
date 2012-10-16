@@ -1,8 +1,8 @@
 <div class="product_presentation clearfix">
 {def $list_items=fetch( content, list, hash( parent_node_id, $node.main_node_id,
-				'class_filter_type',  'include',
-              	'class_filter_array', array( 'image'),
-              	'sort_by', $node.object.main_node.sort_array
+				   'class_filter_type',  'include',
+              	         'class_filter_array', array( 'image'),
+              	         'sort_by', $node.object.main_node.sort_array
 				))}
 				
 
@@ -60,7 +60,7 @@
             	    {/if}
             	              	    
             	    {if $node.data_map.furnes_nr.has_content}
-            	      <th scope="col" >{$node.data_map.furnes_nr.contentclass_attribute.name}</th>
+            	      <th scope="col">{$node.data_map.furnes_nr.contentclass_attribute.name}</th>
             	    {/if}
             	    
             	      <th scope="col">{$node.data_map.name.contentclass_attribute.name}</th>
@@ -111,7 +111,7 @@
             	      {if eq($node.object.data_map.material.value.0, 0|not)}
             	      {def $value = $node.data_map.material.data_text}
 	
-            	      <td class="number_170">
+            	      <td class="number_80">
             	      {$node.data_map.material.contentclass_attribute.content.options.$value.name|i18n( 'hamjern/types' )}
             	      </td>
             	      {/if}

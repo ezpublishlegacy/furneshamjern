@@ -1,5 +1,5 @@
 <div class="product_presentation clearfix">
-{def $list_items=fetch_alias( children, hash( parent_node_id, $node.node_id,
+{def $list_items=fetch_alias( children, hash( parent_node_id, $node.main_node_id,
 				'class_filter_type',  'include',
               	'class_filter_array', array( 'image'),
               	'sort_by', $node.sort_array,
@@ -36,7 +36,7 @@
 				$(".group_{$node.node_id}").colorbox({ldelim}rel:'group_{$node.node_id}'{rdelim});		
 				{rdelim});
 </script>
-<dd><a class="group_{$node.node_id}" href="/{$child_items.data_map.image.content.productlarge.url}">{attribute_view_gui attribute=$child_items.data_map.image image_class="productthumb"}</a></dd>
+<dd><a class="group_{$node.node_id}" href="/{$child_items.data_map.image.content.productmedium.url}">{attribute_view_gui attribute=$child_items.data_map.image image_class="productthumb"}</a></dd>
 {/foreach}
 </dl>
 

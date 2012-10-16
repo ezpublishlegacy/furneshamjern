@@ -1,18 +1,6 @@
 <?php /* #?ini charset="utf-8"?
 
 
-[line_product_presentation]
-Source=node/view/line.tpl
-MatchFile=line/product_presentation.tpl
-Subdir=templates
-Match[class_identifier]=product_presentation
-
-[line_product_presentation_search]
-Source=node/view/search_view.tpl
-MatchFile=search_view/product_presentation.tpl
-Subdir=templates
-Match[class_identifier]=product_presentation
-
 [block_item_product_presentation]
 Source=node/view/block_item.tpl
 MatchFile=block_item/product_presentation.tpl
@@ -84,23 +72,5 @@ Source=content/view/embed.tpl
 MatchFile=embed/embed_code.tpl
 Subdir=templates
 Match[class_identifier]=embed_code
-
-[line_article_search]
-Source=node/view/search_view.tpl
-MatchFile=search_view/article.tpl
-Subdir=templates
-Match[class_identifier]=article
-
-[line_file_search]
-Source=node/view/search_view.tpl
-MatchFile=search_view/file.tpl
-Subdir=templates
-Match[class_identifier]=file
-
-[line_folder_search]
-Source=node/view/search_view.tpl
-MatchFile=search_view/folder.tpl
-Subdir=templates
-Match[class_identifier]=folder
 
 */ ?>
