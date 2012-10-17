@@ -60,10 +60,19 @@
   </div>
   {/case}
 {/switch}
-
 {section name=SearchResult loop=$search_result show=$search_result sequence=array(bglight,bgdark)}
-   {node_view_gui view=search_view sequence=$:sequence use_url_translation=$use_url_translation content_node=$:item}
+{if eq($search_text, $:item.data_map.furnes_nr.content)}
+  <div class="search-match">
+    {node_view_gui view=search_view sequence=$:sequence use_url_translation=$use_url_translation content_node=$:item}
+  </div>
+{/if}
 {/section}
+{section name=SearchResult loop=$search_result show=$search_result sequence=array(bglight,bgdark)}
+{if eq($search_text, $:item.data_map.furnes_nr.content)|not}
+  {node_view_gui view=search_view sequence=$:sequence use_url_translation=$use_url_translation content_node=$:item}
+{/if}
+{/section}
+
 
 {include name=Navigator
          uri='design:navigator/google.tpl'
