@@ -26,7 +26,7 @@
 
 <div id="wrap">
 	<div id="main_print" class="clearfix">
-<img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
+
 {* Main area START *}
 {include uri="design:page_mainarea.tpl"}
 {* Main area END *}
