@@ -16,8 +16,6 @@
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
 {foreach $type as $types}
-{foreach $product_list as $product}
-{run-once}
 <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
             <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
@@ -32,17 +30,15 @@
         {/if}
 <div class="content-view-children">
 <h2>{$types|i18n( 'hamjern/pack' )}</h2>
-{/run-once}
+{foreach $product_list as $product}
         {def $prod_value = $product.object.data_map.innhold.value.0}
                                 {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
                                 {if eq($prod_name, $types)}
                                     {node_view_gui view='line' content_node=$product}
                                 {/if}
-{run-once}
-</div>
-    <div class="page-break"></div>
-{/run-once}            
     {/foreach}
+    <div class="page-break"></div>
+</div>
 {/foreach}
     </div>
 </div>
