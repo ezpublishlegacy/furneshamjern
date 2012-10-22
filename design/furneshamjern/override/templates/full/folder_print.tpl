@@ -11,12 +11,17 @@
 
 {def $page_limit = 100
     $children = array()
-    $children_count = ''}
+    $children_count = ''
+    $tcount= ''
+    $pcount= ''}
 
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
-{foreach $type as $types}
-<img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
+{foreach $product_list as $product max 3}
+        {def $prod_value = $product.object.data_map.innhold.value.0}
+        {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+{run-once}
+    <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
             <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
         </div>
@@ -28,17 +33,117 @@
         {if $node.object.data_map.description.has_content}
             {attribute_view_gui attribute=$node.data_map.description}
         {/if}
+{/run-once}
 <div class="content-view-children">
-<h2>{$types|i18n( 'hamjern/pack' )}</h2>
-{foreach $product_list as $product}
-        {def $prod_value = $product.object.data_map.innhold.value.0}
-                                {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-                                {if eq($prod_name, $types)}
+                 {if eq($prod_name, $prod_name)}
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
-                                {/if}
-    {/foreach}
-    <div class="page-break"></div>
+                 {/if}
+
 </div>
 {/foreach}
+<div class="page-break"></div>
+{foreach $product_list as $product max 3 offset 4}
+        {def $prod_value = $product.object.data_map.innhold.value.0}
+        {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+{run-once}
+    <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
+        <div class="attribute-header">
+            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+        </div>
+        {if $node.object.data_map.short_description.has_content}
+        <div class="attribute-desc">
+            {attribute_view_gui attribute=$node.data_map.short_description}
+        </div>
+        {/if}
+        {if $node.object.data_map.description.has_content}
+            {attribute_view_gui attribute=$node.data_map.description}
+        {/if}
+{/run-once}
+<div class="content-view-children">
+                 {if eq($prod_name, $prod_name)}
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                                    {node_view_gui view='line' content_node=$product}
+                 {/if}
+
+</div>
+{/foreach}
+<div class="page-break"></div>
+{foreach $product_list as $product max 3 offset 8}
+        {def $prod_value = $product.object.data_map.innhold.value.0}
+        {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+{run-once}
+    <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
+        <div class="attribute-header">
+            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+        </div>
+        {if $node.object.data_map.short_description.has_content}
+        <div class="attribute-desc">
+            {attribute_view_gui attribute=$node.data_map.short_description}
+        </div>
+        {/if}
+        {if $node.object.data_map.description.has_content}
+            {attribute_view_gui attribute=$node.data_map.description}
+        {/if}
+{/run-once}
+<div class="content-view-children">
+                 {if eq($prod_name, $prod_name)}
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                                    {node_view_gui view='line' content_node=$product}
+                 {/if}
+
+</div>
+{/foreach}
+<div class="page-break"></div>
+{foreach $product_list as $product max 3 offset 12}
+        {def $prod_value = $product.object.data_map.innhold.value.0}
+        {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+{run-once}
+    <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
+        <div class="attribute-header">
+            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+        </div>
+        {if $node.object.data_map.short_description.has_content}
+        <div class="attribute-desc">
+            {attribute_view_gui attribute=$node.data_map.short_description}
+        </div>
+        {/if}
+        {if $node.object.data_map.description.has_content}
+            {attribute_view_gui attribute=$node.data_map.description}
+        {/if}
+{/run-once}
+<div class="content-view-children">
+                 {if eq($prod_name, $prod_name)}
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                                    {node_view_gui view='line' content_node=$product}
+                 {/if}
+</div>
+{/foreach}
+<div class="page-break"></div>
+{foreach $product_list as $product max 3 offset 16}
+        {def $prod_value = $product.object.data_map.innhold.value.0}
+        {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+{run-once}
+    <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
+        <div class="attribute-header">
+            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+        </div>
+        {if $node.object.data_map.short_description.has_content}
+        <div class="attribute-desc">
+            {attribute_view_gui attribute=$node.data_map.short_description}
+        </div>
+        {/if}
+        {if $node.object.data_map.description.has_content}
+            {attribute_view_gui attribute=$node.data_map.description}
+        {/if}
+{/run-once}
+<div class="content-view-children">
+                 {if eq($prod_name, $prod_name)}
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                                    {node_view_gui view='line' content_node=$product}
+                 {/if}
+</div>
+{/foreach}
+<div class="page-break"></div>
     </div>
 </div>
