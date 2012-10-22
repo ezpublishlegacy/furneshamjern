@@ -23,7 +23,7 @@
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
-            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+            <h1>0 - {attribute_view_gui attribute=$node.data_map.name}</h1>
         </div>
         {if $node.object.data_map.short_description.has_content}
         <div class="attribute-desc">
@@ -46,7 +46,7 @@
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
-            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+            <h1>4 - {attribute_view_gui attribute=$node.data_map.name}</h1>
         </div>
         {if $node.object.data_map.short_description.has_content}
         <div class="attribute-desc">
@@ -70,7 +70,7 @@
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
-            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+            <h1>7 - {attribute_view_gui attribute=$node.data_map.name}</h1>
         </div>
         {if $node.object.data_map.short_description.has_content}
         <div class="attribute-desc">
@@ -94,7 +94,7 @@
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
-            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
+            <h1>10 - {attribute_view_gui attribute=$node.data_map.name}</h1>
         </div>
         {if $node.object.data_map.short_description.has_content}
         <div class="attribute-desc">
