@@ -69,7 +69,7 @@
 </div>
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product max 3 offset 8}
+{foreach $product_list as $product max 3 offset 7}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
@@ -95,7 +95,7 @@
 </div>
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product max 3 offset 12}
+{foreach $product_list as $product max 3 offset 10}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
@@ -120,7 +120,7 @@
 </div>
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product max 3 offset 16}
+{foreach $product_list as $product max 3 offset 13}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
