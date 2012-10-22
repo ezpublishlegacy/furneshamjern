@@ -17,7 +17,7 @@
 
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
-{foreach $product_list as $product}
+{foreach $product_list as $product max 3}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
@@ -40,7 +40,7 @@
 </div>
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product max 3 offset 4}
+{foreach $product_list as $product max 3 offset 3}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
