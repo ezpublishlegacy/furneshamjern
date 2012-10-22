@@ -35,11 +35,8 @@
         {/if}
 {/run-once}
 <div class="content-view-children">
-                 {if eq($prod_name, $prod_name)}
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
-                 {/if}
-
 </div>
 {/foreach}
 <div class="page-break"></div>
@@ -61,11 +58,9 @@
         {/if}
 {/run-once}
 <div class="content-view-children">
-                 {if eq($prod_name, $prod_name)}
+
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
-                 {/if}
-
 </div>
 {/foreach}
 <div class="page-break"></div>
@@ -86,11 +81,9 @@
             {attribute_view_gui attribute=$node.data_map.description}
         {/if}
 {/run-once}
-<div class="content-view-children">
-                 {if eq($prod_name, $prod_name)}
+<div class="content-view-children">    
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
-                 {/if}
 
 </div>
 {/foreach}
@@ -113,10 +106,9 @@
         {/if}
 {/run-once}
 <div class="content-view-children">
-                 {if eq($prod_name, $prod_name)}
+
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
-                 {/if}
 </div>
 {/foreach}
 <div class="page-break"></div>
@@ -138,10 +130,8 @@
         {/if}
 {/run-once}
 <div class="content-view-children">
-                 {if eq($prod_name, $prod_name)}
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
-                 {/if}
 </div>
 {/foreach}
 <div class="page-break"></div>
