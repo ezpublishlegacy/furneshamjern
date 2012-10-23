@@ -17,36 +17,21 @@
 
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
+
 {foreach $product_list as $product max 3}
-{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-{if eq($prod_name, $types)}
 {run-once}
-    <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
-        <div class="attribute-header">
-            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
-        </div>
-        {if $node.object.data_map.short_description.has_content}
-        <div class="attribute-desc">
-            {attribute_view_gui attribute=$node.data_map.short_description}
-        </div>
-        {/if}
-        {if $node.object.data_map.description.has_content}
-            {attribute_view_gui attribute=$node.data_map.description}
-        {/if}
+  {include uri='design:parts/print_header.tpl'}
 {/run-once}
 <div class="content-view-children">
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
-                                    {node_view_gui view='line' content_node=$product}
+                    {node_view_gui view='line' content_node=$product}
 </div>
-{/if}
-{/foreach}
 {/foreach}
 
 <div class="page-break"></div>
 {foreach $product_list as $product max 3 offset 3}
-{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
@@ -69,18 +54,15 @@
                                     {node_view_gui view='line' content_node=$product}
 </div>
 {/foreach}
-{/foreach}
 <div class="page-break"></div>
 
 {foreach $product_list as $product max 3 offset 6}
-{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
- {if eq($prod_name, $types)}
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
-            <h1>7 - {attribute_view_gui attribute=$node.data_map.name}</h1>
+            <h1>{attribute_view_gui attribute=$node.data_map.name}</h1>
         </div>
         {if $node.object.data_map.short_description.has_content}
         <div class="attribute-desc">
@@ -96,15 +78,11 @@
                                     {node_view_gui view='line' content_node=$product}
 
 </div>
-{/if}
-{/foreach}
 {/foreach}
 <div class="page-break"></div>
 {foreach $product_list as $product max 3 offset 9}
-{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-{if eq($prod_name, $types)}
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
@@ -124,15 +102,12 @@
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
 </div>
-{/if}
-{/foreach}
+
 {/foreach}
 <div class="page-break"></div>
 {foreach $product_list as $product max 3 offset 11}
-{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-{if eq($prod_name, $types)}
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
@@ -151,12 +126,9 @@
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
 </div>
-{/if}
-{/foreach}
 {/foreach}
 <div class="page-break"></div>
 {foreach $product_list as $product max 3 offset 14}
-{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
  {if eq($prod_name, $types)}
@@ -178,15 +150,13 @@
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
 </div>
-{/if}
-{/foreach}
 {/foreach}
 <div class="page-break"></div>
 {foreach $product_list as $product max 3 offset 17}
-{foreach $type as $types}
+
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-{if eq($prod_name, $types)}
+
 {run-once}
     <img src={"logo.png"|ezimage} width="213" height="45" alt="Furnes hamjern">
         <div class="attribute-header">
@@ -205,9 +175,9 @@
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                                     {node_view_gui view='line' content_node=$product}
 </div>
-{/if}
+
 {/foreach}
-{/foreach}
+
 <div class="page-break"></div>
 
     </div>
