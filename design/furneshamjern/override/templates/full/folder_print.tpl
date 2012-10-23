@@ -19,6 +19,7 @@
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
 {foreach $offsets as $offset}
+{$offset}
 {foreach $product_list as $product max 3 offset $offset}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
