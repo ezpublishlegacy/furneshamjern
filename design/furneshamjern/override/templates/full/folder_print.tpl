@@ -9,27 +9,112 @@
 {/foreach}
 {set $type = $type|unique}
 
-{def $page_limit = 100
-    $children = array()
-    $children_count = ''
-    $tcount= ''
-    $pcount= ''
-    $offsets= array(0,3,6,9,12,15,18,21)}
-
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
-    
-{foreach $offsets as $offset}
+
+{foreach $product_list as $product max 3}
+{run-once}
   {include uri='design:parts/print_header.tpl'}
-{foreach $product_list as $product max 3 offset $offset}
-        {def $prod_value = $product.object.data_map.innhold.value.0}
-        {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 <div class="content-view-children">
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                     {node_view_gui view='line' content_node=$product}
 </div>
 {/foreach}
 <div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 3}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
 {/foreach}
+<div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 6}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
+{/foreach}
+<div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 9}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
+{/foreach}
+<div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 12}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
+{/foreach}
+<div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 15}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
+{/foreach}
+<div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 18}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
+{/foreach}
+<div class="page-break"></div>
+
+{foreach $product_list as $product max 3 offset 21}
+{run-once}
+  {include uri='design:parts/print_header.tpl'}
+{/run-once}
+{def $prod_value = $product.object.data_map.innhold.value.0}
+{def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
+<div class="content-view-children">
+                    <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
+                    {node_view_gui view='line' content_node=$product}
+</div>
+{/foreach}
+<div class="page-break"></div>
+
     </div>
 </div>
