@@ -17,8 +17,8 @@
 
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
-{foreach $product_list as $product }
-{foreach $type as $types max 3}
+{foreach $product_list as $product max 3}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {if eq($prod_name, $types)}
@@ -45,8 +45,8 @@
 {/foreach}
 
 <div class="page-break"></div>
-{foreach $product_list as $product }
-{foreach $type as $types max 3 offset 3}
+{foreach $product_list as $product max 3 offset 3}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {run-once}
@@ -72,8 +72,8 @@
 {/foreach}
 <div class="page-break"></div>
 
-{foreach $product_list as $product }
-{foreach $type as $types max 3 offset 6}
+{foreach $product_list as $product max 3 offset 6}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
  {if eq($prod_name, $types)}
@@ -100,8 +100,8 @@
 {/foreach}
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product}
-{foreach $type as $types max 3 offset 9}
+{foreach $product_list as $product max 3 offset 9}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {if eq($prod_name, $types)}
@@ -128,8 +128,8 @@
 {/foreach}
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product}
-{foreach $type as $types max 3 offset 11}
+{foreach $product_list as $product max 3 offset 11}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {if eq($prod_name, $types)}
@@ -155,8 +155,8 @@
 {/foreach}
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product }
-{foreach $type as $types max 3 offset 14}
+{foreach $product_list as $product max 3 offset 14}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
  {if eq($prod_name, $types)}
@@ -182,8 +182,8 @@
 {/foreach}
 {/foreach}
 <div class="page-break"></div>
-{foreach $product_list as $product }
-{foreach $type as $types max 3 offset 17}
+{foreach $product_list as $product max 3 offset 17}
+{foreach $type as $types}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
 {if eq($prod_name, $types)}
