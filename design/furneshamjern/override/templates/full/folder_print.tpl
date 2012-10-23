@@ -19,13 +19,10 @@
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
 {foreach $offsets as $offset}
-{$offset}
+  {include uri='design:parts/print_header.tpl'}
 {foreach $product_list as $product max 3 offset $offset}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-{run-once}
-  {include uri='design:parts/print_header.tpl'}
-{/run-once}
 <div class="content-view-children">
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                     {node_view_gui view='line' content_node=$product}
