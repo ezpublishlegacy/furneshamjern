@@ -18,21 +18,18 @@
 
 <div class="content-view-full-folder clearfix">
     <div class="class-folder">
-{foreach $type as $types}
+    
 {foreach $offsets as $offset}
   {include uri='design:parts/print_header.tpl'}
 {foreach $product_list as $product max 3 offset $offset}
         {def $prod_value = $product.object.data_map.innhold.value.0}
         {def $prod_name = $product.object.data_map.innhold.contentclass_attribute.content.options[$prod_value].name}
-{if eq($types, $prod_name)}
 <div class="content-view-children">
                     <h2>{$prod_name|i18n( 'hamjern/pack' )}</h2>
                     {node_view_gui view='line' content_node=$product}
 </div>
-{/if}
 {/foreach}
 <div class="page-break"></div>
-{/foreach}
 {/foreach}
     </div>
 </div>
